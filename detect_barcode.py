@@ -1,7 +1,3 @@
-# USAGE
-# python detect_barcode.py --image images/barcode_01.jpg
-
-# import the necessary packages
 import numpy as np
 import argparse
 import imutils
@@ -9,8 +5,7 @@ import cv2
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required = True,
-	help = "path to the image file")
+ap.add_argument("-i", "--image", required=True, help="path to the image file")
 args = vars(ap.parse_args())
 
 # load the image and convert it to grayscale
