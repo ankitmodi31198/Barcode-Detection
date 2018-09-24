@@ -3,7 +3,6 @@ import pyzbar.pyzbar as pyzbar
 import numpy as np
 import cv2
 
-
 def decode(im):
     # Find barcodes and QR codes
     decodedObjects = pyzbar.decode(im)
@@ -14,7 +13,6 @@ def decode(im):
         print('Data : ', obj.data, '\n')
 
     return decodedObjects
-
 
 # Display barcode and QR code location
 def display(im, decodedObjects):
